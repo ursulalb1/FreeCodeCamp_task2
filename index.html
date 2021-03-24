@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Survey Form</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <div id="main">
+      <div class="container">
+
+         <h1 id="title">My Second Task <br> A Survey Form </h1>
+
+         <p id="description">This is the form I have to make</p>
+
+         <form action="#" id="survey-form" method="post" enctype="multipart/form-data">
+            <!--#name-->
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" required name="username" placeholder="Enter your name" value="name">
+            <!--#email-->
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" required name="useremail" placeholder="Enter your Email" value="">
+            <!--#number-->
+            <label id="number-label" for="number">Number (optional)</label>
+            <input type="number" id="number" name="username" placeholder="Age" value="" min="10" max="110">
+
+            <label for="file">Select Your Photo</label>
+            <input type="file" id="file" name="photo">
+
+            <label for="dropdown">A little more about you.</label>
+            <select name="qualities" id="dropdown">
+               <option selected value="no choose">I don't want to make a choice.</option>
+               <option value="strong">I'm strong</option>
+               <option value="clever">I'm clever</option>
+               <option value="honest">I'm honest</option>
+               <option value="kind">I'm kind</option>
+            </select>
+
+            <label for="choice">Would you recommend freeCodeCamp to a friend?</label>
+            <p class="radio"><input id="choice" checked type="radio" name="choose" value="Definitely"> Definitely</p>
+            <p class="radio"><input id="choice" type="radio" name="choose" value="Maybe"> Maybe</p>
+            <p class="radio"><input id="choice" type="radio" name="choose" value="Not sure"> Not sure</p>
+
+            <label for="dropdown_color">Pick your preferate colour.</label>
+            <select name="color" id="dropdown_color">
+               <option value="choice">Choose your preferate color</option>
+               <option value="red">Red</option>
+               <option value="green">Green</option>
+               <option value="blue">Blue</option>
+               <option value="yellow">Yellow</option>
+               <option value="purple">Purple</option>
+               <option value="Cyan">Cyan</option>
+            </select>
+
+            <label for="checkbox">Choose some of your preferences</label>
+            <p class="checkbox"><input id="checkbox" type="checkbox" checked name="preferences1" value="yes"> Preference
+               1</p>
+            <p class="checkbox"><input id="checkbox" type="checkbox" name="preferences2" value="yes"> Preference 2</p>
+            <p class="checkbox"><input id="checkbox" type="checkbox" name="preferences3" value="yes"> Preference 3</p>
+            <p class="checkbox"><input id="checkbox" type="checkbox" name="preferences4" value="yes"> Preference 4</p>
+            <p class="checkbox"><input id="checkbox" type="checkbox" name="preferences5" value="yes"> Preference 5</p>
+            <p class="checkbox"><input id="checkbox" type="checkbox" name="preferences6" value="yes"> Preference 6</p>
+
+            <label for="comment">Any comments or suggestions?</label>
+            <textarea type="textarea" id="comment" name="comment"> Enter your comment here!</textarea>
+
+            <button type="submit" id="submit">Send</button>
+         </form>
+
+      </div>
+
+   </div>
+</body>
+
+</html>
