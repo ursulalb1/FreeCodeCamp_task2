@@ -4,12 +4,6 @@ body {
    background-color: #d6f5f1;
 }
 
-#main {
-   display: flex;
-   flex-direction: column;
-   align-content: center;
-}
-
 .container {
    display: flex;
    flex-direction: column;
